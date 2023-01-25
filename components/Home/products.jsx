@@ -65,20 +65,27 @@ function Products() {
     <>
       {banner.map((items, index) => {
         return (
+          // ---------------------MAIN DIV--------------------------
           <div key={index} className="2xl:mt-[-125px] xl:mt-[-130px] mt-[-110px] lg:mt-[-100px] ">
+
+            {/*--------------------------BACKGROUND IMAGE--------------------------- */}
             <div
               className=" bg-cover bg-center w-full bg-no-repeat"
               style={{ backgroundImage: `url(${items.background_image})` }}
             >
+              {/* --------------------DATA--------------------------- */}
               <div className={`relative flex flex-col-reverse lg:flex-row lg:gap-[370px] py-[100px] lg:py-[200px] containers justify-between   items-center ${index % 2 == 0 ? "" : "change_class"}`}>
+                {/* ---------------------------TITLE IMAGE--------------------- */}
                 <div className="">
                   <img className="w-[200px] lg:w-[250px] xl:w-[300px] m-auto" src={items.tittle_image} alt="" />
                   <div>
+                    {/* -----------------DESCRIPTION-------------------------- */}
                     <p className="max-w-[700px] lg:text-[16px]  xl:text-[20px] font-bold mt-7 text-center">
                       {items.description}
                     </p>
                   </div>
-                  <Link href={`/product/${items.id}`}>
+                  {/* ---------------------------BUTTON------------------------- */}
+                  <Link href={`/flavour/${items.id}`}>
                   <div className="flex justify-center mb-[20px]">
                     <button className="px-10 py-4 bg-black text-white rounded-xl mt-5  ">
                       {items.btn_text}
@@ -86,9 +93,11 @@ function Products() {
                   </div>
                   </Link>
                 </div>
+                {/* -------------------------------MIDDLE IMAGE------------------------ */}
                 <div className="lg:block w-[300px]  m-auto hidden absolute set_image">
                   <img className="w-[300px]  m-auto" src={items.middle_image} alt="" />
                 </div>
+                {/* -------------------------------------PRODUCT IMAGE--------------------- */}
                 <div>
                   <img  src={items.product_image} className="lg:w-[600px] md:w-[400px] w-[300px] m-auto" alt="" />
                 </div>
