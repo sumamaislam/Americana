@@ -56,14 +56,14 @@ export default function Header() {
               }`}
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <li className="font-bold md:text-[20px] 2xl:text-[24px] text-[#C02227]">
+              <li className="font-bold md:text-[20px] 2xl:text-[24px] text-[#646a32]" style={{textShadow: "3px 3px #c6ab71;"}}>
                 <Link href="#">Home</Link>
               </li>
               
-              <li className="font-bold md:text-[20px] 2xl:text-[24px] text-[#C02227]">
+              <li className="font-bold md:text-[20px] 2xl:text-[24px] text-[#646a32]" style={{textShadow: "3px 3px #c6ab71;"}}>
                 <Link href="#">About </Link>
               </li>
-              <li className="font-bold md:text-[20px] 2xl:text-[24px] text-[#C02227]">
+              <li className="font-bold md:text-[20px] 2xl:text-[24px] text-[#646a32]" style={{textShadow: "3px 3px #c6ab71;"}}>
                 <Link href="#">Contact</Link>
               </li>
             </ul>
