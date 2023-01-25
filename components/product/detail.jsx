@@ -6,7 +6,7 @@ function Detail() {
     {
       id: 1,
       name: "D9o BlueBerry RaspBerry Ice",
-      image: "/images/37.png",
+      image: "/images/47.png",
     },
     {
       id: 2,
@@ -69,14 +69,14 @@ function Detail() {
               alt="title  image"
               />
           </div>
-    <div className="pb-[60px] containers">
-    <div className="grid grid-col md:grid-cols-2  md:px-[20px]  lg:grid-cols-5 md:gap-9  items-center justify-items-center md:pt-[20px] pt-[120px]">
+    <div className="pb-[200px] containers">
+    <div className="grid grid-col md:grid-cols-2   lg:grid-cols-4 md:gap-9  items-center justify-items-center md:pt-[20px] pt-[120px]">
       {flavours.map((items,index)=>{
         return(
           
           
-        <div className="mt-[2px]  about" >
-          <div className="  relative overflow-hidden bg-no-repeat bg-cover">
+        <div key={index} className="mt-[2px]  about" >
+          <div className="w-[400px] ">
             <img className=' hover:scale-110 transition duration-300 ease-in-out' src={items.image} alt="item-img" />
             <p className="mt-[15px] font-bold text-[14px] md:text-[16px] text-black text-center ">
              {items.name}
