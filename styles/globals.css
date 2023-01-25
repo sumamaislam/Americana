@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.containers {
+    width: 90% !important;
+    margin: auto !important;
+}
+
+/* @media screen and (min-width: 1536px) {
+
+    .container {
+        width: 95% !important;
+        margin: auto !important;
+    }
+} */
+
+/* .vape_image {
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+} */
+
+/*------------------------------------- BANNER SECTION CSS-------------------------------- */
+
+/* ------vape image------- */
+.vape_image:hover {
+    cursor: pointer;
+}
+
+/* ------gummy image--------- */
+.gummy_image {
+    cursor: pointer;
+}
+
+.adjust_index {
+    z-index: 10000 !important;
+}
+
+.change_class {
+    flex-direction: row-reverse !important;
+}
+
+@media screen and (max-width:1023px) {
+.change_class {
+    flex-direction: column-reverse !important;
+}
+}
+
+.set_image {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
