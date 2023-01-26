@@ -1,5 +1,5 @@
-import React from 'react'
-import { useSelector } from 'react-redux'
+import React from "react";
+import { useSelector } from "react-redux";
 
 function Detail() {
   const flavours = [
@@ -54,49 +54,51 @@ function Detail() {
       image: "/images/46.png",
     },
   ];
-  
-  const {details} = useSelector((state)=>state.product);
 
-  console.log("details",details)
+  const { details } = useSelector((state) => state.product);
+
+  console.log("details", details);
   return (
     <>
-    <div   
-     className="bg-[url('/images/36.png')] bg-cover bg-center w-full bg-no-repeat relative"> 
-          <div className="flex justify-center pt-[100px]  md:pt-[220px]">
-            <img
-              className="xl:max-w-[300px] lg:max-w-[210px]  max-w-[150px]  "
-              src="/images/2.png"
-              alt="title  image"
-              />
-          </div>
-    <div className="pb-[200px] containers">
-    <div className="grid grid-col md:grid-cols-2   lg:grid-cols-4 md:gap-9  items-center justify-items-center md:pt-[20px] pt-[120px]">
-      {flavours.map((items,index)=>{
-        return(
-          
-          
-        <div key={index} className="mt-[2px]  about" >
-          <div className="w-[400px] ">
-            <img className=' hover:scale-110 transition duration-300 ease-in-out' src={items.image} alt="item-img" />
-            <p className="mt-[15px] font-bold text-[14px] md:text-[16px] text-black text-center ">
-             {items.name}
-            </p>
-          </div>
-          
-        
-         
+      <div className="bg-[url('/images/36.png')] bg-cover bg-center w-full bg-no-repeat relative">
+        {/* -----------------------------------TITLE IMAGE------------------------------------ */}
+        <div className="flex justify-center pt-[100px]  md:pt-[220px]">
+          <img
+            className="xl:max-w-[300px] lg:max-w-[210px]  max-w-[150px]  "
+            src="/images/2.png"
+            alt="title  image"
+          />
         </div>
-     
-    
-
-     )
-    })}
-    </div>
-        
+        {/*----------------------------------MAP-----------------------------------------------  */}
+        <div className="pb-[200px] containers">
+          <div className="grid grid-col md:grid-cols-2   lg:grid-cols-5 md:gap-9  items-center justify-items-center md:pt-[20px] ">
+            {flavours.map((items, index) => {
+              return (
+                // -------------------------------------IMAGE---------------------------------------
+                <div key={index} className="mt-[2px]  about">
+                  <div className=" ">
+                    <img
+                      className=" hover:scale-110 transition duration-300 ease-in-out"
+                      src={items.image}
+                      alt="item-img"
+                    />
+                    {/* ----------------------------------------NAME------------------------------------- */}
+                    <p className="mt-[5px] font-bold text-[14px] md:text-[16px] text-black text-center ">
+                      {items.name}
+                    </p>
+                    {/* --------------------------button---------------------------------------- */}
+                    <div className="flex justify-center">
+                      <button className="px-8 py-2 bg-black rounded-xl mt-3 text-white text-[13px]">BUY NOW</button>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
-      </div>
-              </>
-  )
+    </>
+  );
 }
 
-export default Detail
+export default Detail;
