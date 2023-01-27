@@ -6,19 +6,23 @@ function Detail() {
   
   
   const { details } = useSelector((state) => state.product);
-  console.log("details", details);
+  const { products } = useSelector((state) => state.home);
 
+  console.log("details", details);
+  const url = products?.banner?.base_url+"/";
 
   return (
     <>
-      <div className="bg-[url('/images/36.png')] bg-cover bg-center w-full bg-no-repeat relative">
+    <div className="pt-[0px]">
+
+      <div className=" bg-cover bg-center w-full bg-no-repeat relative "    style={{ backgroundImage: `url(${details[0]?.background_image})` }}>
         {/* -----------------------------------TITLE IMAGE------------------------------------ */}
         <div className="flex justify-center pt-[100px]  md:pt-[220px]">
           <img
             className="xl:max-w-[300px] lg:max-w-[210px]  max-w-[150px]  "
             src={details && details[0]?.title_image}
             alt="title  image"
-          />
+            />
         </div>
         {/*----------------------------------MAP-----------------------------------------------  */}
         <div className="pb-[200px] containers">
@@ -32,7 +36,7 @@ function Detail() {
                       className="w-[1500px] hover:scale-110 transition duration-300 ease-in-out"
                       src={items.image}
                       alt="item-img"
-                    />
+                      />
                     {/* ----------------------------------------NAME------------------------------------- */}
                     <p className="mt-[5px] font-bold text-[14px] md:text-[16px] text-black text-center ">
                       {items.title}
@@ -45,6 +49,7 @@ function Detail() {
                 </div>
               );
             })}
+              </div>
           </div>
         </div>
       </div>

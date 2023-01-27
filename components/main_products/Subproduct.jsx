@@ -7,7 +7,7 @@ function Subproduct() {
   const { details } = useSelector((state) => state.product);
   const { products } = useSelector((state) => state.home);
 
-  const url = products?.banner?.base_url + "/";
+  const url = products?.banner?.base_url + "/" ;
 
   return (
     <>
@@ -60,7 +60,7 @@ function Subproduct() {
                   <div className="">
                     <img
                       className="w-[200px] lg:w-[250px] xl:w-[300px] m-auto"
-                      src={items.tittle_image}
+                      src={url + items.title_image}
                       alt=""
                     />
                     <div>
@@ -70,7 +70,7 @@ function Subproduct() {
                       </p>
                     </div>
                     {/* ---------------------------BUTTON------------------------- */}
-                    <Link href={`/flavour${items.id}`}>
+                    <Link href={`/flavour/${items.slug}`}>
                       <div className="flex justify-center mb-[20px]">
                         <button className="px-10 py-4 bg-black text-white rounded-xl mt-5  ">
                           {items.button_text}
