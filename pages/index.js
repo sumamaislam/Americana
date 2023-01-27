@@ -5,7 +5,7 @@ import { Footer, Header } from '../components/common'
 import { Banner, Products } from '../components/Home'
 import { wrapper } from '../store'
 import {  productDataRequest } from '../redux/home'
-import { GetServerSideProps } from 'next'
+
 const roboto = Anaheim({
   weight: '400',
   subsets: ['latin'],
