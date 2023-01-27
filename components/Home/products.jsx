@@ -8,7 +8,8 @@ function Products() {
 
   console.log("products",products)
   const url = products?.banner?.base_url;
-  // console.log("url44",url
+  const url2 = products?.banner?.base_url+"/"+products?.lists[1]?.bg_image;
+  console.log("url44",url2)
   // const bb = products?.lists[0].center_image
   // console.log("image",url+"/"+bb)
 
@@ -23,13 +24,13 @@ function Products() {
             {/*--------------------------BACKGROUND IMAGE--------------------------- */}
             <div
               className=" bg-cover bg-center w-full bg-no-repeat"
-              style={{ backgroundImage: `url(${url+"/"+items.bg_image})` }}
+              style={{ backgroundImage: `url(${JSON.stringify(url+"/"+items.bg_image)})` }}
             >
               {/* --------------------DATA--------------------------- */}
               <div className={`relative flex flex-col-reverse lg:flex-row lg:gap-[370px] py-[100px] lg:py-[200px] containers justify-between   items-center ${index % 2 == 0 ? "" : "change_class"}`}>
                 {/* ---------------------------TITLE IMAGE--------------------- */}
                 <div className="">
-                  <img className="w-[200px] lg:w-[250px] xl:w-[300px] m-auto" src={`${url +"/"+items.title_image }`} alt="" />
+                  <img className="w-[200px] lg:w-[250px] xl:w-[300px] m-auto" src={`${JSON.stringify(url +"/"+items.title_image) }`} alt="" />
                   <div>
                     {/* -----------------DESCRIPTION-------------------------- */}
                     <p className="max-w-[700px] lg:text-[16px]  xl:text-[20px] font-bold mt-7 text-center">
@@ -47,7 +48,7 @@ function Products() {
                 </div>
                 {/* -------------------------------MIDDLE IMAGE------------------------ */}
                 <div className="lg:block w-[300px]  m-auto hidden absolute set_image">
-                  <img className="w-[300px]  m-auto" src={`${url+"/"+items.center_image}`} alt="" />
+                  <img className="w-[300px]  m-auto" src={`${JSON.stringify(url+"/"+items.center_image)}`} alt="" />
                 </div>
                 {/* -------------------------------------PRODUCT IMAGE--------------------- */}
                 <div>
