@@ -22,7 +22,7 @@ function Detail() {
         </div>
         {/*----------------------------------MAP-----------------------------------------------  */}
         <div className="pb-[200px] containers">
-          <div className="grid grid-col md:grid-cols-2   lg:grid-cols-5 md:gap-9  items-center justify-items-center md:pt-[20px] ">
+          <div className="grid grid-col md:grid-cols-2   lg:grid-cols-4 xl:grid-cols-5 md:gap-9  items-center justify-items-center md:pt-[20px] ">
             {details && details[0]?.product_images?.map((items, index) => {
               return (
                 // -------------------------------------IMAGE---------------------------------------
