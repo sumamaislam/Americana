@@ -31,6 +31,6 @@ export default function Home() {
 }
 
 
-export const getStaticProps = wrapper.getStaticProps((store) => async () => {
+export const getServerSideProps = wrapper.getServerSideProps((store) => async () => {
   await store.dispatch(productDataRequest());
 });

@@ -1,63 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
+import product from "../../redux/product";
 
 function Detail() {
-  const flavours = [
-    {
-      id: 1,
-      name: "D9o BlueBerry RaspBerry Ice",
-      image: "/images/47.png",
-    },
-    {
-      id: 2,
-      name: " D9o cherry ak-47",
-      image: "/images/38.png",
-    },
-    {
-      id: 3,
-      name: "D9o Dubian Poison",
-      image: "/images/39.png",
-    },
-    {
-      id: 4,
-      name: "D9o Gorila glue",
-      image: "/images/40.png",
-    },
-    {
-      id: 5,
-      name: "D9o honey dew lemon ice",
-      image: "/images/41.png",
-    },
-    {
-      id: 6,
-      name: "D9o Moui Wowie",
-      image: "/images/42.png",
-    },
-    {
-      id: 7,
-      name: "D9o Northern Lights",
-      image: "/images/43.png",
-    },
-    {
-      id: 8,
-      name: "D9o OG lemonade",
-      image: "/images/44.png",
-    },
-    {
-      id: 9,
-      name: "D9o Peach Flambe",
-      image: "/images/45.png",
-    },
-    {
-      id: 10,
-      name: "D9o Tropicana Cookies",
-      image: "/images/46.png",
-    },
-  ];
-
+  
+  
   const { details } = useSelector((state) => state.product);
-
   console.log("details", details);
+
+
   return (
     <>
       <div className="bg-[url('/images/36.png')] bg-cover bg-center w-full bg-no-repeat relative">
@@ -65,26 +16,26 @@ function Detail() {
         <div className="flex justify-center pt-[100px]  md:pt-[220px]">
           <img
             className="xl:max-w-[300px] lg:max-w-[210px]  max-w-[150px]  "
-            src="/images/2.png"
+            src={details && details[0]?.title_image}
             alt="title  image"
           />
         </div>
         {/*----------------------------------MAP-----------------------------------------------  */}
         <div className="pb-[200px] containers">
           <div className="grid grid-col md:grid-cols-2   lg:grid-cols-5 md:gap-9  items-center justify-items-center md:pt-[20px] ">
-            {flavours.map((items, index) => {
+            {details && details[0]?.product_images?.map((items, index) => {
               return (
                 // -------------------------------------IMAGE---------------------------------------
-                <div key={index} className="mt-[2px]  about">
+                <div key={index} className="mt-[2px]  ">
                   <div className=" ">
                     <img
-                      className=" hover:scale-110 transition duration-300 ease-in-out"
+                      className="w-[1500px] hover:scale-110 transition duration-300 ease-in-out"
                       src={items.image}
                       alt="item-img"
                     />
                     {/* ----------------------------------------NAME------------------------------------- */}
                     <p className="mt-[5px] font-bold text-[14px] md:text-[16px] text-black text-center ">
-                      {items.name}
+                      {items.title}
                     </p>
                     {/* --------------------------button---------------------------------------- */}
                     <div className="flex justify-center">

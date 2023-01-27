@@ -15,39 +15,39 @@ function Footer() {
               </Link>
               </div>
               <div className="text-center text-[18px] max-w-[300px] xl:max-w-[500px] font-bold md:text-[20px] pt-5  md:pb-10 ">
-                <p className='text-[#646a32]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus iure, vel obcaecati sapiente voluptatem repellat praesentium ad eius eligendi nobis?</p>
+                <p className='text-black'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus iure, vel obcaecati sapiente voluptatem repellat praesentium ad eius eligendi nobis?</p>
                
               </div>
             </ul>
           </div>
           <div className="p-5 md:pt-24 md:pb-12">
             <ul className="tracking-wider ">
-              <p className=" font-bold text-2xl pb-4 text-[#646a32]"  >
+              <p className=" font-bold text-2xl pb-4 text-black"  >
                Products
               </p>
               <Link href="/">
-                <li className=" md:hidden block text-[#646a32] text-[18px]  md:text-[20px] pb-2   cursor-pointer" >
+                <li className=" md:hidden block text-black font-bold text-[18px]  md:text-[20px] pb-2   cursor-pointer" >
                   Home
                 </li>
               </Link>
               <Link href="/">
-                <li className=" md:hidden block text-[#646a32] text-[18px]  md:text-[20px] pb-2   cursor-pointer">
+                <li className=" md:hidden block text-black font-bold text-[18px]  md:text-[20px] pb-2   cursor-pointer">
                   About
                 </li>
               </Link>
               <Link href="/">
-                <li className=" md:hidden block text-[#646a32] text-[18px]  md:text-[20px] pb-2   cursor-pointer">
+                <li className=" md:hidden block text-black font-bold text-[18px]  md:text-[20px] pb-2   cursor-pointer">
                 Contact
                 </li>
               </Link>
               
               <Link href="/">
-                <li className=" text-[#646a32]    text-[18px] md:text-[20px] pb-2   cursor-pointer">
+                <li className=" text-black font-bold    text-[18px] md:text-[20px] pb-2   cursor-pointer">
                   Vapes
                 </li>
               </Link>
               <Link href="/">
-                <li className=" text-[#646a32]   text-[18px] md:text-[20px] pb-2   cursor-pointer" >
+                <li className=" text-black font-bold   text-[18px] md:text-[20px] pb-2   cursor-pointer" >
                 Gummies
                 </li>
               </Link>
@@ -57,21 +57,21 @@ function Footer() {
 
           <div className="p-5 md:pt-24 md:pb-12 ">
             <ul className="tracking-wider hidden md:block">
-              <p className=" font-bold text-2xl pb-4 text-[#646a32]" >
+              <p className=" font-bold text-2xl pb-4 text-black" >
                Menu
               </p>
               <Link href="/">
-                <li className=" text-[#646a32] text-[18px]  md:text-[20px] pb-2   cursor-pointer">
+                <li className=" text-black  font-bold text-[18px]  md:text-[20px] pb-2   cursor-pointer">
                  Home
                 </li>
               </Link>
               <Link href="/">
-                <li className=" text-[#646a32] text-[18px]  md:text-[20px] pb-2   cursor-pointer">
+                <li className=" text-black font-bold text-[18px]  md:text-[20px] pb-2   cursor-pointer">
                  About
                 </li>
               </Link>
               <Link href="/">
-                <li className=" text-[#646a32] text-[18px]  md:text-[20px] pb-2   cursor-pointer">
+                <li className=" text-black font-bold  text-[18px]  md:text-[20px] pb-2   cursor-pointer">
                   Contact
                 </li>
               </Link>
@@ -80,13 +80,13 @@ function Footer() {
 
           <div className="p-5 md:pt-24 pb-12 tracking-wider ">
             <ul>
-              <p className=" font-bold text-2xl pb-4 text-[#646a32] " >
+              <p className=" font-bold text-2xl pb-4 text-black " >
 Contact 
         </p>
-              <li className=" text-[#646a32]   text-[18px] md:text-[20px] pb-2   cursor-pointer">
-                <a href="mailto: 666666666">americana123@gmail.com</a>
+              <li className=" text-black   font-bold text-[18px] md:text-[20px] pb-2   cursor-pointer">
+                <a href="mailto: 666666666 ">americana123@gmail.com</a>
               </li>
-              <li className=" text-[#646a32]   text-[18px] md:text-[20px] pb-2   cursor-pointer">
+              <li className=" text-black font-bold  text-[18px] md:text-[20px] pb-2   cursor-pointer">
                 <a href="tel: 666666666">1234567890</a>
               </li>
               {/* <li className="    text-[22px] md:text-[20px]  hover:text-black cursor-pointer md:pt-16 pt-8">

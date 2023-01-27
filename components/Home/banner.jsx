@@ -10,10 +10,12 @@ function Banner() {
   // src={`${url}/${products?.banner?.product[0]?.image}`}
 
   const url = products?.banner?.base_url
+  const back = url + "/" + products?.banner?.bg_img; 
+  
   return (
     <div className="">
       {/*---------------------------- Banner image---------------------- */}
-      <div className="bg-[url('/images/landingpage.png')] bg-cover bg-center w-full bg-no-repeat relative">
+      <div className=" bg-cover bg-center w-full bg-no-repeat relative" style={{ backgroundImage: `url(${back})` }}>
         <div className="containers">
           {/*--------------------- product images------------------ */}
           <div className="flex lg:flex-row justify-between flex-col ">
@@ -22,7 +24,7 @@ function Banner() {
               <Link href={`/${"vapes"}`}>
               <img
                 className="2xl:w-[700px] xl:w-[600px] lg:w-[450px] w-[320px] m-auto vape_image hover:scale-95 duration-700"
-                src="/images/35.png"
+                src={`${url}/${products?.banner?.product[0]?.image}`}
                 alt="product vape image"
               />
               </Link>
@@ -32,7 +34,7 @@ function Banner() {
             <Link href={`/${"gummies"}`}>
               <img
                 className="2xl:w-[700px] xl:w-[600px] lg:w-[450px] w-[320px] m-auto  gummy_image  hover:scale-95 duration-700"
-                src="/images/34.png"
+                src={`${url}/${products?.banner?.product[1].image}`}
                 alt="product gummies image"
               />
               </Link>

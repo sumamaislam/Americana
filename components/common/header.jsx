@@ -5,7 +5,7 @@ export default function Header() {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="w-full fixed bg-[url('/images/header.png')] bg-cover bg-no-repeat md:h-[150px] z-10">
+    <nav className="w-full fixed bg-[url('/images/header.png')] bg-cover xl:bg-auto bg-no-repeat md:h-[150px] z-10">
       <div className="justify-between md:items-center md:flex containers" >
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">

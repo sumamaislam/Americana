@@ -1,10 +1,10 @@
 import '../styles/globals.css'
 import { wrapper } from "../store";
 
-function App({ Component, pageProps }) {
+function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
 
 
-export default wrapper.withRedux(App);
+export default wrapper.withRedux(MyApp);
 
