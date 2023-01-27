@@ -4,9 +4,10 @@ import { useSelector } from "react-redux";
 
 function Products() {
 
-  const { products } = useSelector((state)=>state.home);
+  // const { details } = useSelector((state) => state.product);
+  const { products } = useSelector((state) => state.home);
 
-  console.log("products",products)
+  // console.log("details", details);
   const url = products?.banner?.base_url+"/";
   // const url2 = products?.banner?.base_url+"/"+products?.lists[1]?.bg_image;
   // console.log("url44",url2)
