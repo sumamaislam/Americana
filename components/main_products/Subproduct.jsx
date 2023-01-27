@@ -14,14 +14,14 @@ function Subproduct() {
       {/* <Banner /> */}
       <div className="">
         {/*---------------------------- Banner image---------------------- */}
-        <div
+        {/* <div
           className=" bg-cover bg-center w-full bg-no-repeat relative"
           style={{ backgroundImage: `url(${url+details[0]?.detail?.banner})` }}
         >
           <div className="containers">
-            {/*--------------------- product images------------------ */}
+       
             <div className="flex lg:flex-row justify-between flex-col ">
-              {/* ----------------vape image------------------ */}
+            
               <div className="2xl:mt-[22%]  mt-[20%] lg:mt-[32%] mb-[3%]  2xl:mb-[5%]">
                 <Link href={`/vapes`}>
                   <img
@@ -31,19 +31,11 @@ function Subproduct() {
                   />
                 </Link>
               </div>
-              {/*-----------------GUMMY IMAGE----------------- */}
-              {/* <div className="2xl:mt-[22%]  lg:mt-[30%] mb-[3%] 2xl:mb-[5%]">
-                <Link href={`/gummies`}>
-                  <img
-                    className="2xl:w-[700px] xl:w-[600px] lg:w-[450px] w-[320px] m-auto  gummy_image  hover:scale-95 duration-700"
-                    src={`${url}/${url+details[0].detail.banner}`}
-                    alt="product gummies image"
-                  />
-                </Link>
-              </div> */}
+             
             </div>
           </div>
-        </div>
+        </div> */}
+        <img src={url+details[0]?.detail?.banner} alt="" />
       </div>
       {details &&
         details?.map((items, index) => {
