@@ -5,22 +5,22 @@ export default function Header() {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="w-full fixed bg-[url('/images/header.png')] bg-cover xl:bg-auto bg-no-repeat md:h-[150px] z-10">
-      <div className="justify-between md:items-center md:flex containers" >
+    <nav className={`w-full fixed ${navbar ? "bg-[url('/images/landingpage.png')] h-[100vh] " : "bg-[url('/images/header.png')]"} bg-cover  bg-no-repeat z-10`}>
+      <div className="justify-between  containers " >
         <div>
-          <div className="flex items-center justify-between py-3 md:py-5 md:block">
+          <div className="flex items-center justify-between py-4 2xl:py-6 ">
             <Link href="/">
               <img src="/images/logo.png" className="w-[150px] md:w-[200px]" alt="logo" />
             </Link>
-            <div className="md:hidden">
+            <div className="">
               <button
-                className="p-2  rounded-md outline-none focus:border-gray-400 focus:border"
+                className="  rounded-md outline-none "
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6"
+                    className="w-7 h-7"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -33,11 +33,11 @@ export default function Header() {
                 ) : (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6"
+                    className="w-7 h-7"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
-                    strokeWidth={2}
+                    strokeWidth={3}
                   >
                     <path
                       strokeLinecap="round"
@@ -52,19 +52,19 @@ export default function Header() {
         </div>
         <div>
           <div
-            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
+            className={`flex-1 justify-self-center mt-[30%] pb-3 md:mt-[4%]  2xl:mt-[10%]  ${navbar ? "block" : "hidden"
               }`}
           >
-            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <li className="font-bold md:text-[20px] 2xl:text-[24px] text-[#646a32]" style={{textShadow: "3px 3px #c6ab71;"}}>
-                <Link href="#">Home</Link>
+            <ul className="items-center  justify-center space-y-24  ">
+              <li className="font-bold md:text-[20px] 2xl:text-[40px] text-[#646a32]" style={{textShadow: "3px 3px #c6ab71;"}}>
+                <Link href="/"><img className="m-auto  w-[100px] md:w-[150px] hover:scale-90 transition duration-700" src="/images/48.png" alt="" /></Link>
               </li>
               
-              <li className="font-bold md:text-[20px] 2xl:text-[24px] text-[#646a32]" style={{textShadow: "3px 3px #c6ab71;"}}>
-                <Link href="#">About </Link>
+              <li className="font-bold md:text-[20px] 2xl:text-[40px] text-[#646a32]" style={{textShadow: "3px 3px #c6ab71;"}}>
+                <Link href="/about"><img className="m-auto w-[120px] md:w-[170px] hover:scale-90 transition duration-700" src="/images/49.png" alt="" /></Link>
               </li>
-              <li className="font-bold md:text-[20px] 2xl:text-[24px] text-[#646a32]" style={{textShadow: "3px 3px #c6ab71;"}}>
-                <Link href="#">Contact</Link>
+              <li className="font-bold md:text-[20px] 2xl:text-[40px] text-[#646a32]" style={{textShadow: "3px 3px #c6ab71;"}}>
+                <Link href="/contact"><img className="m-auto w-[160px] md:w-[230px] hover:scale-90 transition duration-700" src="/images/50.png" alt="" /></Link>
               </li>
             </ul>
           </div>

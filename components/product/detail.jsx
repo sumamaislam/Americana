@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 import product from "../../redux/product";
@@ -43,7 +44,7 @@ function Detail() {
                     </p>
                     {/* --------------------------button---------------------------------------- */}
                     <div className="flex justify-center">
-                      <button className="px-8 py-2 bg-black rounded-xl mt-3 text-white text-[13px]">BUY NOW</button>
+                      <Link href="http://vapeandgummy.com/product-brand/americana-hemp/"><button className="px-8 py-2 bg-black rounded-xl hover:bg-green-800 transition duration-500 ease-in-out mt-3 text-white text-[13px]">BUY NOW</button></Link>
                     </div>
                   </div>
                 </div>

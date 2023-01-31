@@ -35,7 +35,8 @@ function Subproduct() {
             </div>
           </div>
         </div> */}
-        <img src={url+details[0]?.detail?.banner} alt="" />
+        <img className="hidden md:block pt-10 2xl:pt-[0px]  w-full" src={url+details[0]?.detail?.banner} alt="" />
+        <img className="md:hidden w-full" src={url+details[0]?.detail?.product_image} alt="" />
       </div>
       {details &&
         details?.map((items, index) => {
