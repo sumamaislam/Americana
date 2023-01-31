@@ -23,7 +23,23 @@
 } */
 
 /*------------------------------------- BANNER SECTION CSS-------------------------------- */
+.change_inputs {
+outline: 1px solid red;
+}
 
+
+.change_inputs ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: red !important;
+    opacity: 1; /* Firefox */
+  }
+  
+  .change_inputs:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: red !important;
+  }
+  
+  .change_inputs::-ms-input-placeholder { /* Microsoft Edge */
+    color: red !important;
+  }
 /* ------vape image------- */
 .vape_image:hover {
     cursor: pointer;

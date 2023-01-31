@@ -73,7 +73,7 @@ function Subproduct() {
                     {/* ---------------------------BUTTON------------------------- */}
                     <Link href={`/flavour/${items.slug}`}>
                       <div className="flex justify-center mb-[20px]">
-                        <button className="px-10 py-4 bg-black text-white rounded-xl mt-5  ">
+                        <button className="px-10 py-3 hover:bg-green-800 transition duration-500 ease-in-out bg-black text-white rounded-xl mt-5  ">
                           {items.button_text}
                         </button>
                       </div>

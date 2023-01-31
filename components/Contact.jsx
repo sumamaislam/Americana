@@ -1,6 +1,38 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function Contact() {
+  const fields = {name:"" ,email:"" , message:""}
+  const [values,setValue]=useState(fields)
+ const [errors ,setErrors]=useState({})
+  const handleChange=(e)=>{
+setValue({...values ,[e.target.name]:e.target.value})
+// console.log(values)
+  }
+  const handleSubmit=(e)=>{
+e.preventDefault();
+validate(values)
+  }
+  const validate =(value)=>{
+let error={};
+if(!value.name){
+  error.name="Name is required"
+}
+if(!value.email){
+  error.email="Email is required"
+}
+if(!value.message){
+  error.message="message is required"
+}
+
+  if(Object.keys(error).length > 0){
+    setErrors(error)
+  }
+else{
+  setValue({ name: "", email: "", message: "" });
+setErrors({name: "", email: "", message: ""})
+console.log( values)
+}
+  }
   return (
     <>
       <div className="bg-[url('/images/about.png')] h-full w-full bg-no-repeat bg-cover">
@@ -26,44 +58,45 @@ function Contact() {
                     alt="contact-us"
                   />
                   <div className="lg:text-3xl text-2xl text-white  pb-[20px] font-medium">Contact us</div>
-                  <form >
-                    <input className='bg-gray-100 focus:outline-none rounded-md h-[41px] mb-[20px] w-full px-[15px]'
+                  <form onSubmit={handleSubmit}>
+                    <input className={` focus:outline-none  rounded-md h-[41px] mb-[20px]  w-full px-[15px]   ${errors.name ? "change_inputs text-red-500" : ""}`}
                       label={"Enter Full Name"}
-                      name={"firstname"}
+                      name={"name"}
                       placeholder="Name"
-                      // handleChange={handleChange}
-                      // value={inputData.firstname}
+                       onChange={handleChange}
+                      value={values.name}
                       type="text"
                     />
-                    {/* <p className="">{error.firstname}</p> */}
-                    <input className='bg-gray-100 focus:outline-none rounded-md h-[41px] mb-[20px] w-full px-[15px]'
+                   {/* <p>{errors.name}</p> */}
+                    <input  className={`bg-gray-100 focus:outline-none  rounded-md h-[41px] mb-[20px] w-full px-[15px] ${errors.email ? "change_inputs text-red-500" : ""}`}
                       label={"Enter Email Address"}
                       name={"email"}
                       placeholder="Email"
-                      // handleChange={handleChange}
-                      // value={inputData.email}
+                      onChange={handleChange}
+                      value={values.email}
                       type="email"
+                
                     />
-                    {/* <p className="">{error.email}</p> */}
+                   
 
                     <div className="rounded-md m-auto mb-[20px]">
                       <textarea
-                        className="border h-[100px] w-full  py-[10px] px-[15px] rounded-md bg-gray-100 focus:outline-none "
+                        className={`border h-[100px] w-full  py-[10px] px-[15px] rounded-md bg-gray-100 focus:outline-none ${errors.message ? "change_inputs text-red-500" : ""}`}
                         name="message"
                         id=""
                         cols="48"
                         rows="3"
                         type="text"
                         placeholder="Enter Your Messgae"
-                      //   onChange={handleChange}
-                      //   value={inputData.message}
+                        onChange={handleChange}
+                       value={values.message}
                       ></textarea>
-                      {/* <p className="">{error.message}</p> */}
+                    
                     </div>
 
                     <div>
                       <button
-                        className="outline outline-slate-200 outline-1 font-semibold text-white h-[41px] rounded-md text-[17px] w-full"
+                        className="outline outline-slate-200 outline-1 font-semibold hover:bg-green-700  hover:outline-none text-white h-[41px] rounded-md text-[17px] w-full"
                         type="submit"
                       >
                         Submit
