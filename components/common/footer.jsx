@@ -8,7 +8,7 @@ function Footer() {
       <div className="   2xl:mt-[-125px] xl:mt-[-130px] mt-[-110px] lg:mt-[-100px]">
         <div className=" bg-cover bg-[url('/images/footer.png')]  relative">
           <Topbtn />
-          <div className=" flex py-[100px] items-center  text-center md:text-start lg:justify-between justify-center containers flex-wrap flex-col lg:flex-row  md:items-start  footer ">
+          <div className=" flex py-[100px] items-center  text-center md:text-start lg:justify-between justify-center containers flex-wrap flex-col md:flex-row  lg:items-start  footer ">
             <div className="p-5 ">
               <ul className=" items-center flex flex-col">
                 <div className="max-w-[200px] pt-[30px] md:pt-16 ">
