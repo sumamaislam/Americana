@@ -39,13 +39,13 @@ function Products() {
                     </p>
                   </div>
                   {/* ---------------------------BUTTON------------------------- */}
-                  <Link href={{ pathname: `/flavour/${items.slug}` }}>
                   <div className="flex justify-center mb-[20px]">
+                  <Link href={{ pathname: `/flavour/${items.slug}` }}>
                     <button className="px-10 py-2 hover:bg-green-800 transition duration-500 ease-in-out bg-black text-white rounded-xl mt-5  ">
                     { items.button_text}
                     </button>
-                  </div>
                   </Link>
+                  </div>
                 </div>
                 {/* -------------------------------MIDDLE IMAGE------------------------ */}
                 <div className="lg:block w-[300px]  m-auto hidden absolute set_image">
