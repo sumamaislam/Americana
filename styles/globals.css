@@ -77,3 +77,20 @@ body {
     -ms-user-select: none; /* Disable selection on Internet Explorer */
     user-select: none; /* Disable selection on modern browsers */
   }
+
+  .set_header {
+    transition: top 0.7s;
+    /* transform: translateY(-100%); */
+    position: fixed;
+    top: -100vh;
+  }
+
+  .set_header2 {
+    transition: top 0.7s;
+    top: 0vh;
+    /* transform: translateY(0%); */
+  }
+
+  .show_initial {
+    
+  }
