@@ -53,7 +53,7 @@ function Products() {
                 </div>
                 {/* -------------------------------------PRODUCT IMAGE--------------------- */}
                 <div>
-                  <img  src={`${url+items.product_image }`} className="lg:w-[600px] md:w-[400px] w-[300px] m-auto" alt="" />
+                  <img  src={`${url+items.product_image }`} className="lg:w-[600px] md:w-[400px]  w-[300px] m-auto" alt="" />
                 </div>
               </div>
             </div>
