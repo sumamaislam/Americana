@@ -40,6 +40,6 @@ export const getStaticProps = wrapper.getStaticProps(
     if (ctx?.params?.id) {
       await store.dispatch(sentslugRequest(ctx?.params?.id));
     }
-    await store.dispatch(productDataRequest());
+    // await store.dispatch(productDataRequest());
   }
 );

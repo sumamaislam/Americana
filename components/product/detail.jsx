@@ -7,10 +7,11 @@ function Detail() {
   
   
   const { details } = useSelector((state) => state.product);
-  const { products } = useSelector((state) => state.home);
+  // const { products } = useSelector((state) => state.home);
 
   console.log("details", details);
-  const url = products?.banner?.base_url+"/";
+  // const url = products?.banner?.base_url+"/";
+  const url = `https://erp.frutycactus.com/public/storage/` + "/";
 
   return (
     <>

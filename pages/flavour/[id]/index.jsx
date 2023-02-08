@@ -40,7 +40,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = wrapper.getStaticProps((store) => async (ctx) => {
   if (ctx?.params?.id) {
-    console.log("jhgfdiugjdfj",ctx?.params?.id)
+    // console.log("jhgfdiugjdfj",ctx?.params?.id)
     await store.dispatch(sentslugRequest(ctx?.params?.id));
   }
   // await store.dispatch(footerDataRequest());
