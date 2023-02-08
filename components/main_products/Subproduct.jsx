@@ -5,9 +5,10 @@ import { Banner } from "../Home";
 
 function Subproduct() {
   const { details } = useSelector((state) => state.product);
-  const { products } = useSelector((state) => state.home);
+  // const { products } = useSelector((state) => state.home);
 
-  const url = products?.banner?.base_url + "/" ;
+  // const url = products?.banner?.base_url + "/" ;
+  const url = `https://erp.frutycactus.com/public/storage/` + "/";
 
   return (
     <>

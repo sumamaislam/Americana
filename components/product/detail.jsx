@@ -7,10 +7,11 @@ function Detail() {
   
   
   const { details } = useSelector((state) => state.product);
-  const { products } = useSelector((state) => state.home);
+  // const { products } = useSelector((state) => state.home);
 
   console.log("details", details);
-  const url = products?.banner?.base_url+"/";
+  // const url = products?.banner?.base_url+"/";
+  const url = `https://erp.frutycactus.com/public/storage/` + "/";
 
   return (
     <>
@@ -43,8 +44,10 @@ function Detail() {
                       {items.title}
                     </p>
                     {/* --------------------------button---------------------------------------- */}
-                    <div className="flex justify-center">
-                      <Link href="http://vapeandgummy.com/product-brand/americana-hemp/"><button className="px-8 py-2 bg-black rounded-xl hover:bg-green-800 transition duration-500 ease-in-out mt-3 text-white text-[13px]">BUY NOW</button></Link>
+                    <div className="flex justify-center  gap-4">
+                      <Link href="http://vapeandgummy.com/product-brand/americana-hemp/"><button className="px-4 py-2 bg-black rounded-xl hover:bg-green-800 transition duration-500 ease-in-out mt-3 text-white text-[13px]">BUY NOW</button></Link>
+                      <Link href="#"><button className="px-4 py-2 bg-black rounded-xl hover:bg-green-800 transition duration-500 ease-in-out mt-3 text-white text-[13px]">BUY WHOLE SALE</button></Link>
+                   
                     </div>
                   </div>
                 </div>
