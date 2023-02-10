@@ -29,13 +29,13 @@ function Product() {
 }
 
 export default Product;
-export const getStaticPaths = async () => {
-  return {
-    paths: [],
-    fallback: true, 
-  };
-};
-export const getStaticProps = wrapper.getStaticProps(
+// export const getStaticPaths = async () => {
+//   return {
+//     paths: [],
+//     fallback: true, 
+//   };
+// };
+export const getServerSideProps = wrapper.getServerSideProps(
   (store) => async (ctx) => {
     if (ctx?.params?.id) {
       await store.dispatch(sentslugRequest(ctx?.params?.id));
