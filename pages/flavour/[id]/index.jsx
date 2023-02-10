@@ -31,12 +31,12 @@ function Flavour() {
 
 export default Flavour;
 
-export const getStaticPaths = async () => {
-  return {
-    paths: [],
-    fallback: true,
-  };
-};
+// export const getStaticPaths = async () => {
+//   return {
+//     paths: [],
+//     fallback: true,
+//   };
+// };
 
 export const getServerSideProps = wrapper.getServerSideProps((store) => async (ctx) => {
   if (ctx?.params?.id) {
