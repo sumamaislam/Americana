@@ -25,14 +25,18 @@ function Products() {
             {/*--------------------------BACKGROUND IMAGE--------------------------- */}
             <div
               className=" bg-cover bg-center w-full bg-no-repeat"
+<<<<<<< HEAD
               style={{ backgroundImage: `url(${JSON.stringify(url+items.bg_image)})` }}
               // style={{ backgroundImage: `url(https://firebasestorage.googleapis.com/v0/b/americana-1d058.appspot.com/o/D9o-bg.png?alt=media&token=b2bb78b0-f3a7-4950-a15c-2610224971a3)` }}
+=======
+              style={{ backgroundImage: `url(${items.d4})` }}
+>>>>>>> fcee1598a292c4954154969222a3aa7c0c907541
             >
               {/* --------------------DATA--------------------------- */}
               <div className={`relative flex flex-col-reverse lg:flex-row lg:gap-[370px] py-[100px] lg:py-[200px] containers justify-between   items-center ${index % 2 == 0 ? "" : "change_class"}`}>
                 {/* ---------------------------TITLE IMAGE--------------------- */}
                 <div className="">
-                  <img className="w-[200px] lg:w-[250px] xl:w-[300px] m-auto" src={`${url+items.title_image }`} alt="" />
+                  <img className="w-[200px] lg:w-[250px] xl:w-[300px] m-auto" src={`${items.d1}`} alt="" />
                   <div>
                     {/* -----------------DESCRIPTION-------------------------- */}
                     <p className="max-w-[700px] lg:text-[16px]  xl:text-[20px] font-bold mt-7 text-center">
@@ -50,13 +54,17 @@ function Products() {
                 </div>
                 {/* -------------------------------MIDDLE IMAGE------------------------ */}
                 <div className="lg:block w-[300px]  m-auto hidden absolute set_image">
-                  <img className="w-[300px]  m-auto" src={`${url+items.center_image}`} alt="" />
+                  <img className="w-[300px]  m-auto" src={`${items.d3}`} alt="" />
                 </div>
                 {/* -------------------------------------PRODUCT IMAGE--------------------- */}
                 <div>
+<<<<<<< HEAD
                   <img  src={`${url+items.product_image }`} className="lg:w-[600px] md:w-[400px]  w-[300px] m-auto" alt="" />
                   {/* <img  src="/images/D9o.png" className="lg:w-[600px] md:w-[400px]  w-[300px] m-auto" alt="" /> */}
 
+=======
+                  <img  src={`${items.d2 }`} className="lg:w-[600px] md:w-[400px]  w-[300px] m-auto" alt="" />
+>>>>>>> fcee1598a292c4954154969222a3aa7c0c907541
                 </div>
               </div>
             </div>

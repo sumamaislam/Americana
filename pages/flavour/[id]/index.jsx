@@ -31,14 +31,14 @@ function Flavour() {
 
 export default Flavour;
 
-export const getStaticPaths = async () => {
-  return {
-    paths: [],
-    fallback: true,
-  };
-};
+// export const getStaticPaths = async () => {
+//   return {
+//     paths: [],
+//     fallback: true,
+//   };
+// };
 
-export const getStaticProps = wrapper.getStaticProps((store) => async (ctx) => {
+export const getServerSideProps = wrapper.getServerSideProps((store) => async (ctx) => {
   if (ctx?.params?.id) {
     // console.log("jhgfdiugjdfj",ctx?.params?.id)
     await store.dispatch(sentslugRequest(ctx?.params?.id));
