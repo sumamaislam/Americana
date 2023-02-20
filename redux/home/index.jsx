@@ -17,7 +17,7 @@ export const productDataRequest = createAsyncThunk(
       let response;
       thunkAPI.dispatch(setLoading(true));
       response = await axios
-        .get(`${baseURL}americana-home`)
+        .get(`${baseURL}americana-home?id=1`)
         .then((response) => response.data);
       // toast(<RequestMessage message="Message sent successfully!" />);
       thunkAPI.dispatch(setLoading(false));

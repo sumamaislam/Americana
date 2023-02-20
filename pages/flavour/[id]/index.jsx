@@ -6,6 +6,7 @@ import Header from "../../../components/common/header";
 import Detail from "../../../components/product/detail";
 import { sentslugRequest } from "../../../redux/product";
 import { wrapper } from "../../../store";
+import { productDataRequest } from "../../../redux/home";
 
 const roboto = Anaheim({
   weight: '400',
@@ -38,10 +39,18 @@ export default Flavour;
 //   };
 // };
 
-export const getServerSideProps = wrapper.getServerSideProps((store) => async (ctx) => {
+export const getStaticPaths = async () => {
+  return {
+    paths: [],
+    fallback: true, 
+  };
+};
+
+export const getStaticProps = wrapper.getStaticProps((store) => async (ctx) => {
   if (ctx?.params?.id) {
     // console.log("jhgfdiugjdfj",ctx?.params?.id)
     await store.dispatch(sentslugRequest(ctx?.params?.id));
   }
   // await store.dispatch(footerDataRequest());
+  await store.dispatch(productDataRequest());
 });

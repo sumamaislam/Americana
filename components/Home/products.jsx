@@ -25,12 +25,7 @@ function Products() {
             {/*--------------------------BACKGROUND IMAGE--------------------------- */}
             <div
               className=" bg-cover bg-center w-full bg-no-repeat"
-<<<<<<< HEAD
-              style={{ backgroundImage: `url(${JSON.stringify(url+items.bg_image)})` }}
-              // style={{ backgroundImage: `url(https://firebasestorage.googleapis.com/v0/b/americana-1d058.appspot.com/o/D9o-bg.png?alt=media&token=b2bb78b0-f3a7-4950-a15c-2610224971a3)` }}
-=======
-              style={{ backgroundImage: `url(${items.d4})` }}
->>>>>>> fcee1598a292c4954154969222a3aa7c0c907541
+              style={{ backgroundImage: `url(${JSON.stringify(items.d4)})` }}
             >
               {/* --------------------DATA--------------------------- */}
               <div className={`relative flex flex-col-reverse lg:flex-row lg:gap-[370px] py-[100px] lg:py-[200px] containers justify-between   items-center ${index % 2 == 0 ? "" : "change_class"}`}>
@@ -58,13 +53,7 @@ function Products() {
                 </div>
                 {/* -------------------------------------PRODUCT IMAGE--------------------- */}
                 <div>
-<<<<<<< HEAD
-                  <img  src={`${url+items.product_image }`} className="lg:w-[600px] md:w-[400px]  w-[300px] m-auto" alt="" />
-                  {/* <img  src="/images/D9o.png" className="lg:w-[600px] md:w-[400px]  w-[300px] m-auto" alt="" /> */}
-
-=======
                   <img  src={`${items.d2 }`} className="lg:w-[600px] md:w-[400px]  w-[300px] m-auto" alt="" />
->>>>>>> fcee1598a292c4954154969222a3aa7c0c907541
                 </div>
               </div>
             </div>
