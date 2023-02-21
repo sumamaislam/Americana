@@ -16,7 +16,7 @@ function Banner() {
   return (
     <div className="">
       {/*---------------------------- Banner image---------------------- */}
-      <div className=" bg-cover bg-center w-full bg-no-repeat relative" style={{ backgroundImage: `url(${JSON.stringify(back)})` }}>
+      <div className=" bg-cover bg-center w-full bg-no-repeat relative " style={{ backgroundImage: `url(${JSON.stringify(back)})` }}>
         <div className="containers">
           {/*--------------------- product images------------------ */}
           <div className="flex lg:flex-row justify-between flex-col ">

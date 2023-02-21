@@ -17,18 +17,18 @@ function Detail() {
     <>
     <div className="pt-[0px]">
 
-      <div className=" bg-cover bg-center w-full bg-no-repeat relative "    style={{ backgroundImage: `url(${details[0]?.background_image})` }}>
+      <div className=" bg-cover bg-center w-full bg-no-repeat relative "    style={{ backgroundImage: `url(${JSON.stringify(details[0]?.d3)})` }}>
         {/* -----------------------------------TITLE IMAGE------------------------------------ */}
         <div className="flex justify-center pt-[100px]  md:pt-[220px]">
           <img
             className="xl:max-w-[300px] lg:max-w-[210px]  max-w-[150px]  "
-            src={details && details[0]?.title_image}
+            src={details && details[0]?.d2}
             alt="title  image"
             />
         </div>
         {/*----------------------------------MAP-----------------------------------------------  */}
         <div className="pb-[200px] containers">
-          <div className="grid grid-col md:grid-cols-2   lg:grid-cols-4 xl:grid-cols-5 md:gap-9  items-center justify-items-center md:pt-[20px] ">
+          <div className="grid grid-col md:grid-cols-2   lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 md:gap-9  items-center justify-items-center md:pt-[20px] ">
             {details && details[0]?.product_images?.map((items, index) => {
               return (
                 // -------------------------------------IMAGE---------------------------------------
@@ -36,7 +36,7 @@ function Detail() {
                   <div className=" ">
                     <img
                       className="w-[1500px] hover:scale-110 transition duration-300 ease-in-out"
-                      src={items.image}
+                      src={items.d1}
                       alt="item-img"
                       />
                     {/* ----------------------------------------NAME------------------------------------- */}

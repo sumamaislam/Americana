@@ -39,7 +39,7 @@ export const detailSlice = createSlice({
   extraReducers: (builder) => {
     builder.addCase(HYDRATE, (state, action) => {
       console.log("HYDRATE", action.payload);
-      state.details = action?.payload?.product?.details?action.payload.product.details : state?.details;
+      state.details = action?.payload?.product?.details ? action.payload.product.details : state?.details;
     });
     builder.addCase(sentslugRequest.pending, (state) => {
       state.isLoading = true;

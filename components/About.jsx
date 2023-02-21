@@ -14,10 +14,10 @@ function About() {
           {/* ------------------------------TITLE----------------------------  */}
           <div className=" pt-[10px]   max-w-[800px] mx-auto px-[30px] md:text-[20px] text-medium ">
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi,
-              a consequatur illo expedita officiis illum praesentium reiciendis
-              voluptates quos quisquam ullam doloremque beatae fugiat laborum
-              magnam sunt reprehenderit quia ducimus?
+            Americana hemp is your go to destination for high quality CBD vapes
+and gummies. Our mission is to provide our customers with the best
+CBD products available on the market. We are committed to provide
+excellent customer service.
             </p>
           </div>
         </div>
@@ -28,22 +28,16 @@ function About() {
             <p className="text-center text-5xl font-bold ">VAPES</p>
             {/* ---------------------------------DESCRIPTION--------------------------------*/}
             <p className="pt-[10px] text-justify text-[20px] ">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut animi
-              quis deserunt recusandae eos minima voluptatibus sapiente
-              accusantium. Quis cumque veritatis inventore quisquam eligendi
-              dolores est repellendus! Possimus laudantium, accusamus,
-              distinctio cum est nesciunt doloremque, nobis deleniti aut beatae
-              dolorum. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Ut animi quis deserunt recusandae eos minima voluptatibus sapiente
-              accusantium. Quis cumque veritatis inventore quisquam eligendi
-              dolores est repellendus! Possimus laudantium, accusamus,
-              distinctio cum est nesciunt doloremque, nobis deleniti aut beatae
-              dolorum.Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Ut animi quis deserunt recusandae eos minima voluptatibus sapiente
-              accusantium. Quis cumque veritatis inventore quisquam eligendi
-              dolores est repellendus! Possimus laudantium, accusamus,
-              distinctio cum est nesciunt doloremque, nobis deleniti aut beatae
-              dolorum.
+            Vaping has become increasingly popular way to consume CBD. Vaping
+offers a quick and effective way to experience the natural benefits of
+CBD. At Americana hemp, we are proud to offer some of the best cbd
+vapes on the market. Our vapes are made with highest quality
+experience and are designed to provide our customers with a safe,
+effective, and enjoyable way to experience the natural benefits of CBD.
+One of the reasons why our vapes are popular is because of our
+commitment to quality. We utilize high quality, organic cbd oil in our
+vapes. Our vapes are free from harmful chemicals and additives,
+ensuring that you get the purest CBD experience possible.
             </p>
           </div>
           {/* P-------------------------------------IMAGE--------------------------------------- */}
@@ -63,22 +57,21 @@ function About() {
             <p className=" text-center text-5xl  font-bold">Gummies</p>
             {/*------------------------------------- DESCRIPTION---------------------------------  */}
             <p className="pt-[10px] text-justify text-[20px] ">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut animi
-              quis deserunt recusandae eos minima voluptatibus sapiente
-              accusantium. Quis cumque veritatis inventore quisquam eligendi
-              dolores est repellendus! Possimus laudantium, accusamus,
-              distinctio cum est nesciunt doloremque, nobis deleniti aut beatae
-              dolorum. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Ut animi quis deserunt recusandae eos minima voluptatibus sapiente
-              accusantium. Quis cumque veritatis inventore quisquam eligendi
-              dolores est repellendus! Possimus laudantium, accusamus,
-              distinctio cum est nesciunt doloremque, nobis deleniti aut beatae
-              dolorum.Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Ut animi quis deserunt recusandae eos minima voluptatibus sapiente
-              accusantium. Quis cumque veritatis inventore quisquam eligendi
-              dolores est repellendus! Possimus laudantium, accusamus,
-              distinctio cum est nesciunt doloremque, nobis deleniti aut beatae
-              dolorum.
+            Gummies are a popular type of candy that come in a variety of flavors,
+shapes, and sizes. They are made from gelatin, sugar, water, and other
+ingredients, and they can be customized with different colors, flavors,
+and even vitamins or supplements. Our CBD gummies are made with
+high-quality, organic ingredients, and they can come in a range of
+flavors and strengths. Americana Hemp is a leading supplier of high-
+quality CBD gummies in the United States. We are dedicated to
+providing our customers with a wide range of gummies that are made
+with the best quality ingredients and produced in a state-of-the-art
+facility. One of the things that sets us apart from other companies is our
+commitment to quality. All of our gummies are made with non-GMO,
+organic, and vegan-friendly ingredients, and they are third-party lab
+tested to ensure purity and potency. This means that customers can trust
+that they are getting a safe and effective product when they choose
+Americana Hemp gummies.
             </p>
           </div>
         </div>

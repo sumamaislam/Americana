@@ -6,7 +6,7 @@ import { Banner } from "../Home";
 function Subproduct() {
   const { details } = useSelector((state) => state.product);
   // const { products } = useSelector((state) => state.home);
-
+console.log(details)
   // const url = products?.banner?.base_url + "/" ;
   const url = `https://erp.frutycactus.com/public/storage/` + "/";
 
@@ -36,7 +36,7 @@ function Subproduct() {
             </div>
           </div>
         </div> */}
-        <img className="hidden md:block pt-10 2xl:pt-[0px]  w-full" src={url+details[0]?.detail?.banner} alt="" />
+        <img className="hidden md:block pt-10 2xl:pt-[0px]  w-full" src={details[0]?.detail?.d1} alt="" />
         <img className="md:hidden w-full" src={url+details[0]?.detail?.product_image} alt="" />
       </div>
       {details &&
@@ -50,7 +50,7 @@ function Subproduct() {
               {/*--------------------------BACKGROUND IMAGE--------------------------- */}
               <div
                 className=" bg-cover bg-center w-full bg-no-repeat"
-                style={{ backgroundImage: `url(${url + items.bg_image})` }}
+                style={{ backgroundImage: `url( ${JSON.stringify(items.d4)})` }}
               >
                 {/* --------------------DATA--------------------------- */}
                 <div
@@ -62,7 +62,7 @@ function Subproduct() {
                   <div className="">
                     <img
                       className="w-[200px] lg:w-[250px] xl:w-[300px] m-auto"
-                      src={url + items.title_image}
+                      src={items.d1}
                       alt=""
                     />
                     <div>
@@ -91,7 +91,7 @@ function Subproduct() {
                   {/* -------------------------------------PRODUCT IMAGE--------------------- */}
                   <div>
                     <img
-                      src={url + items.product_image}
+                      src={items.d2}
                       className="lg:w-[600px] md:w-[400px] w-[300px] m-auto"
                       alt=""
                     />

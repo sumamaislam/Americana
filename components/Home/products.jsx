@@ -21,7 +21,7 @@ function Products() {
       {products?.lists?.map((items, index) => {
         return (
           // ---------------------MAIN DIV--------------------------
-          <div key={index} className="2xl:mt-[-125px] xl:mt-[-130px] mt-[-110px] lg:mt-[-100px] ">
+          <div key={index} className="2xl:mt-[-125px] xl:mt-[-130px] mt-[-110px] lg:mt-[-100px]  ">
             {/*--------------------------BACKGROUND IMAGE--------------------------- */}
             <div
               className=" bg-cover bg-center w-full bg-no-repeat"
