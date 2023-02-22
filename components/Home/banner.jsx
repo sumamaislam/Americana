@@ -1,22 +1,29 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 
 function Banner() {
   
+  const [colors , setColors] = useState(true)
   const { products } = useSelector((state)=>state.home);
 
   console.log("products",products)
   // src={`${url}/${products?.banner?.product[0]?.image}`}
 
   const url = products?.banner?.base_url
-  const back =  products?.banner?.d1; 
+  const back =   products?.banner?.d1
   console.log(back)
+
+  useEffect(()=>{
+  setTimeout(()=>{
+     setColors(false)
+  },3200)
+  },[])
   
   return (
     <div className="">
       {/*---------------------------- Banner image---------------------- */}
-      <div className=" bg-cover bg-center w-full bg-no-repeat relative " style={{ backgroundImage: `url(${JSON.stringify(back)})` }}>
+     {<div className={`bg-cover bg-center w-full bg-no-repeat relative h-[100vh] ${colors ? "bg-[#DEA757]" : ""}`}  style={{backgroundImage: `url(${JSON.stringify(back)}` }}>
         <div className="containers">
           {/*--------------------- product images------------------ */}
           <div className="flex lg:flex-row justify-between flex-col ">
@@ -42,7 +49,11 @@ function Banner() {
             </div>
           </div>
         </div>
-      </div>
+      </div> }
+      {/* {!products?.banner?.d1 &&<div className="bg-[#E2AC5D] h-[100vh]">
+      
+
+      </div>} */}
     </div>
   );
 }
