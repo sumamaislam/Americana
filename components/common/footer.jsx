@@ -6,7 +6,7 @@ function Footer() {
   return (
     <>
       <div className="   2xl:mt-[-125px] xl:mt-[-130px] mt-[-110px] lg:mt-[-100px]">
-        <div className=" bg-cover bg-[url('/images/footer.png')]  relative">
+        <div className=" bg-cover bg-[url('https://firebasestorage.googleapis.com/v0/b/biotech-c9081.appspot.com/o/images%2FFebruary_2023%2Ffooter.png975e923e-1aa5-454f-badf-361b3eb62ff8?alt=media&token=bc5e9ee6-ebdf-458c-ad36-a5d5b6350140')]  relative">
           <Topbtn />
           <div className=" flex py-[100px] items-center  text-center md:text-start lg:justify-between justify-center containers flex-wrap flex-col md:flex-row  lg:items-start  footer ">
             <div className="p-5 ">
@@ -15,18 +15,18 @@ function Footer() {
                   <Link href="/">
                     <img
                       className="cursor-pointer"
-                      src="/images/logo.png"
+                      src="https://firebasestorage.googleapis.com/v0/b/biotech-c9081.appspot.com/o/images%2FFebruary_2023%2Flogo.png27c52f44-e974-4591-95f1-dfb98a36a033?alt=media&token=64673475-06bf-4d02-b8c8-1b64772facb1"
                       alt="logo"
                     />
                   </Link>
                 </div>
                 <div className="text-center text-[18px] max-w-[300px] xl:max-w-[500px] font-bold md:text-[20px] pt-5  md:pb-10 ">
                   <p className="text-black">
-                  Americana Hemp is an excellent choice for anyone looking for high-
-quality CBD vapes and gummies. With our commitment to quality, wide
-range of flavors and varieties, and excellent customer service, we are
-one of the best vape and gummy supplying company in the United
-States.
+                    Americana Hemp is an excellent choice for anyone looking for high-
+                    quality CBD vapes and gummies. With our commitment to quality, wide
+                    range of flavors and varieties, and excellent customer service, we are
+                    one of the best vape and gummy supplying company in the United
+                    States.
                   </p>
                 </div>
               </ul>

@@ -35,17 +35,17 @@ console.log( values)
   }
   return (
     <>
-      <div className="bg-[url('/images/about.png')] h-full w-full bg-no-repeat bg-cover">
+      <div className="bg-[url('https://firebasestorage.googleapis.com/v0/b/biotech-c9081.appspot.com/o/images%2FFebruary_2023%2FHHC-bg2.png45872ef7-0cbc-46ea-b0cf-74d19a5fb677?alt=media&token=28e328a9-91e0-40db-a3c1-a495bef640c9')] h-full w-full bg-no-repeat bg-cover">
 
         <div className="py-[60px]">
           <div className="md:pt-[100px] pt-[50px] text-center md:text-3xl text-3xl lg:text-5xl about font-bold">
             Contact us
           </div>
-          <div className="bg-none lg:bg-[url('/images/contact.png')] mb-5 md:mb-[150px] md:mt-[50px]  mx-auto lg:shadow-xl  max-w-4xl h-[600px] flex items-center">
+          <div className="bg-none lg:bg-[url('https://firebasestorage.googleapis.com/v0/b/biotech-c9081.appspot.com/o/images%2FFebruary_2023%2Fcontact.pngb86fbf3f-54c7-41b1-9cd7-0fcaf24101b1?alt=media&token=0fd888c2-6baa-478b-87a9-66166903c100')] mb-5 md:mb-[150px] md:mt-[50px]  mx-auto lg:shadow-xl  max-w-4xl h-[600px] flex items-center">
             {/* image */}
 
             <div className="hidden lg:flex md:items-center   md:justify-center ">
-              <img className="px-5" src="/images/contact_vector.png" alt="contact-us" />
+              <img className="px-5" src="https://firebasestorage.googleapis.com/v0/b/biotech-c9081.appspot.com/o/images%2FFebruary_2023%2Fcontact_vector.pngd7076a94-3184-4ccc-b84c-ad8261de61b7?alt=media&token=315287d7-47fa-4c8a-8d64-339f2cfcc2eb" alt="contact-us" />
             </div>
 
             {/* right secction */}

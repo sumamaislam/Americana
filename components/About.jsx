@@ -3,7 +3,7 @@ import React from "react";
 function About() {
   return (
     // ----------------------BACKGROUND IMAGE-----------------------------
-    <div className="bg-[url('/images/about.png')] h-full w-full bg-no-repeat bg-cover">
+    <div className="bg-[url('https://firebasestorage.googleapis.com/v0/b/biotech-c9081.appspot.com/o/images%2FFebruary_2023%2FHHC-bg2.png45872ef7-0cbc-46ea-b0cf-74d19a5fb677?alt=media&token=28e328a9-91e0-40db-a3c1-a495bef640c9')] h-full w-full bg-no-repeat bg-cover">
       {/* ----------------------------MAIN DIV ---------------------------------*/}
       <div className="pb-[200px]">
         {/* ------------------------HEADING----------------------------------*/}
@@ -42,7 +42,7 @@ ensuring that you get the purest CBD experience possible.
           </div>
           {/* P-------------------------------------IMAGE--------------------------------------- */}
           <div className="max-w-[600px]">
-            <img src="/images/34.png" alt="vape image" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/biotech-c9081.appspot.com/o/images%2FFebruary_2023%2FP1.png61fcfd7e-9e66-4356-bf7f-a07ecb7e95b9?alt=media&token=917fe4bd-20f8-4324-a953-b6a919e72a43" alt="vape image" />
           </div>
         </div>
 
@@ -50,7 +50,7 @@ ensuring that you get the purest CBD experience possible.
         <div className="flex flex-col md:flex-row max-w-[1400px] mx-auto justify-between pt-[30px] md:pt-[100px] md:gap-24 px-[30px] items-center  about">
           {/* ------------------------------IMAGE------------------------------ */}
           <div className="max-w-[600px]">
-            <img src="/images/35.png" alt="gummies image" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/biotech-c9081.appspot.com/o/images%2FFebruary_2023%2FP2.png6b40868f-b6a0-45c8-bc0e-5d2c7d16ed29?alt=media&token=b096ca7c-d554-40da-9c4f-718c40a1d9ab" alt="gummies image" />
           </div>
           <div className="max-w-[600px]  pt-[30px] md:pt-[0px]">
             {/* ---------------------TITLE----------------------------------- */}

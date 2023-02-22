@@ -21,12 +21,13 @@ export default function Header() {
 
   return (
     <div>
-      <nav className={`w-full fixed bg-[url('/images/header.png')] bg-cover  bg-no-repeat z-10`}>
+      <nav className={`w-full fixed bg-[url('https://firebasestorage.googleapis.com/v0/b/biotech-c9081.appspot.com/o/images%2FFebruary_2023%2Fheader.png01639d8a-fcd3-4cb6-8eb1-cdde71fde139?alt=media&token=c96b807d-c6d5-46be-bd4b-7a75eaf1785d')] bg-cover  bg-no-repeat z-10`}>
         <div className="justify-between  containers " >
           <div>
             <div className="flex items-center justify-between py-4 2xl:py-6 ">
               <Link href="/">
-                <img src="/images/logo.png" className="w-[150px] md:w-[200px]" alt="logo" />
+                <img src="https://firebasestorage.googleapis.com/v0/b/biotech-c9081.appspot.com/o/images%2FFebruary_2023%2Flogo.png27c52f44-e974-4591-95f1-dfb98a36a033?alt=media&token=64673475-06bf-4d02-b8c8-1b64772facb1
+" className="w-[150px] md:w-[200px]" alt="logo" />
               </Link>
               <div className="">
                 <button
@@ -59,7 +60,8 @@ export default function Header() {
           <div>
             <div className="flex items-center justify-between py-4 2xl:py-6 ">
               <Link href="/">
-                <img src="/images/logo.png" className="w-[150px] md:w-[200px]" alt="logo" />
+                <img src="https://firebasestorage.googleapis.com/v0/b/biotech-c9081.appspot.com/o/images%2FFebruary_2023%2Flogo.png27c52f44-e974-4591-95f1-dfb98a36a033?alt=media&token=64673475-06bf-4d02-b8c8-1b64772facb1
+" className="w-[150px] md:w-[200px]" alt="logo" />
               </Link>
               <div className="">
                 <button
@@ -88,14 +90,15 @@ export default function Header() {
             >
               <ul className="items-center  justify-center space-y-24  ">
                 <li className="font-bold md:text-[20px] 2xl:text-[40px] text-[#646a32]" style={{ textShadow: "3px 3px #c6ab71;" }}>
-                  <p onClick={handleClick}><img className="m-auto cursor-pointer w-[100px] md:w-[150px] hover:scale-90 transition duration-700" src="/images/48.png" alt="" /></p>
+                  <p onClick={handleClick}><img className="m-auto cursor-pointer w-[100px] md:w-[150px] hover:scale-90 transition duration-700" src="https://firebasestorage.googleapis.com/v0/b/biotech-c9081.appspot.com/o/images%2FFebruary_2023%2F48.png8d8d1c55-c23e-47c2-a01a-8eee4275e12d?alt=media&token=103a1be0-03cb-4f91-9a76-9c8cf17c71e5
+" alt="" /></p>
                 </li>
 
                 <li className="font-bold md:text-[20px] 2xl:text-[40px] text-[#646a32]" style={{ textShadow: "3px 3px #c6ab71;" }}>
-                  <p onClick={handleClick2}><img className="m-auto cursor-pointer w-[120px] md:w-[170px] hover:scale-90 transition duration-700" src="/images/49.png" alt="" /></p>
+                  <p onClick={handleClick2}><img className="m-auto cursor-pointer w-[120px] md:w-[170px] hover:scale-90 transition duration-700" src="https://firebasestorage.googleapis.com/v0/b/biotech-c9081.appspot.com/o/images%2FFebruary_2023%2F49.png8b3f733e-b177-47cf-bfe0-d294a038ec32?alt=media&token=9f7fea70-8c43-40dd-bc12-d992929c81b6" alt="" /></p>
                 </li>
                 <li className="font-bold md:text-[20px] 2xl:text-[40px] text-[#646a32]" style={{ textShadow: "3px 3px #c6ab71;" }}>
-                  <p onClick={handleClick3}><img className="m-auto cursor-pointer w-[160px] md:w-[230px] hover:scale-90 transition duration-700" src="/images/50.png" alt="" /></p>
+                  <p onClick={handleClick3}><img className="m-auto cursor-pointer w-[160px] md:w-[230px] hover:scale-90 transition duration-700" src="https://firebasestorage.googleapis.com/v0/b/biotech-c9081.appspot.com/o/images%2FFebruary_2023%2F50.png426d5212-4548-434e-b32e-36962b5e4fd9?alt=media&token=9da80366-8c12-4c24-a587-4dae1b2c72d7" alt="" /></p>
                 </li>
               </ul>
             </div>
