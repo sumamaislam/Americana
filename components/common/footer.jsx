@@ -103,7 +103,7 @@ function Footer() {
             </div>
           </div>
           <p className=" text-[12px] md:text-[18px] text-center pb-[15px]">
-            copyright © 2022. All Rights Reserved
+            copyright © 2023. All Rights Reserved
           </p>
         </div>
       </div>
