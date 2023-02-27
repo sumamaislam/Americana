@@ -121,10 +121,10 @@ function Detail() {
                   <Link href="/flavour/nob">
                     <div className="relative">
 
-                      <img
-                        className={`md:w-[100px] w-[60px] hover:scale-110 duration-500`}
-                        src="/images/KOB.png"
-                        alt="Knock Off Blend"
+                    <img
+                        className={`md:w-[100px] w-[60px] hover:scale-110 duration-500 `}
+                        src="/images/NOB-Category.png"
+                        alt="Knock Out Blend"
                       />
                       {loading && page === "/flavour/nob" && <div className="loader spin"></div>}
                     </div>
@@ -150,11 +150,12 @@ function Detail() {
                   <Link href="/flavour/kop">
                     <div className="relative">
 
-                      <img
-                        className={`md:w-[100px] w-[60px] hover:scale-110 duration-500 `}
-                        src="/images/NOB-Category.png"
-                        alt="Knock Out Blend"
+                    <img
+                        className={`md:w-[100px] w-[60px] hover:scale-110 duration-500`}
+                        src="/images/KOB.png"
+                        alt="Knock Off Blend"
                       />
+                      
                       {loading && page === "/flavour/kop" && <div className="loader spin"></div>}
                     </div>
 
