@@ -137,7 +137,7 @@ function Detail() {
 
                       <img
                         className={`md:w-[100px] w-[60px] hover:scale-110 duration-500 `}
-                        src="/images/D9O.png"
+                        src="/images/D9o.png"
                         alt="D90 Gummies"
                       />
                       {loading && page === "/flavour/gummydelta9o" && <div className="loader spin"></div>}
