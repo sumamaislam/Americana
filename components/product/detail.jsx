@@ -84,7 +84,7 @@ function Detail() {
 
                       <img
                         className={`md:w-[100px] w-[60px] hover:scale-110 duration-500 `}
-                        src={`${router.asPath === "/flavour/d11"} ` ? "/images/D11-category.png" : "/images/D11-category.png"}
+                        src={`${router.asPath === "/flavour/d11"  ? "/images/D11-bg.png" : "/images/D11-category.png"}` }
                         alt="Delta 11 Indica"
                       />
                       {loading && page === "/flavour/d11" && <div className="loader spin"></div>}
@@ -97,7 +97,7 @@ function Detail() {
 
                       <img
                         className={`md:w-[100px] w-[60px] hover:scale-110 duration-500 `}
-                        src="/images/FSB-category.png"
+                        src={`${router.asPath === "/flavour/fsb" ? "/images/FSB-bg.png" : "/images/FSB-category.png"}`}
                         alt="Fluid Spectrum Blend"
                       />
                       {loading && page === "/flavour/fsb" && <div className="loader spin"></div>}
@@ -110,7 +110,7 @@ function Detail() {
 
                       <img
                         className={`md:w-[100px] w-[60px] hover:scale-110 duration-500`}
-                        src="/images/HHC-category.png"
+                        src={`${router.asPath === "/flavour/hhc" ? "/images/HHC-bg.png" : "/images/HHC-category.png"}`}
                         alt="Sativa Super Lemon Haze"
                       />
                       {loading && page === "/flavour/hhc" && <div className="loader spin"></div>}
@@ -123,7 +123,8 @@ function Detail() {
 
                     <img
                         className={`md:w-[100px] w-[60px] hover:scale-110 duration-500 `}
-                        src="/images/NOB-Category.png"
+                        src={`${router.asPath === "/flavour/nob" ? "/images/NOB-bg.png" : "/images/NOB-Category.png"}`}
+
                         alt="Knock Out Blend"
                       />
                       {loading && page === "/flavour/nob" && <div className="loader spin"></div>}
@@ -137,7 +138,7 @@ function Detail() {
 
                       <img
                         className={`md:w-[100px] w-[60px] hover:scale-110 duration-500 `}
-                        src="/images/D9o.png"
+                        src={`${router.asPath === "/flavour/gummydelta9o" ? "/images/gummy-bg-d9o.png" : "/images/D9o.png"}`}
                         alt="D90 Gummies"
                       />
                       {loading && page === "/flavour/gummydelta9o" && <div className="loader spin"></div>}
@@ -152,7 +153,7 @@ function Detail() {
 
                     <img
                         className={`md:w-[100px] w-[60px] hover:scale-110 duration-500`}
-                        src="/images/KOB.png"
+                        src={`${router.asPath === "/flavour/kop" ? "/images/gummy-bg-kob.png" : "/images/KOB.png"}`}
                         alt="Knock Off Blend"
                       />
                       
@@ -167,7 +168,8 @@ function Detail() {
 
                       <img
                         className={`md:w-[100px] w-[60px] hover:scale-110 duration-500 `}
-                        src="/images/TOB.png"
+                        src={`${router.asPath === "/flavour/top" ? "/images/gummy-bg-tob.png" : "/images/TOB.png"}`}
+                        
                         alt="Take Off Blend"
                       />
                       {loading && page === "/flavour/top" && <div className="loader spin"></div>}
@@ -212,7 +214,7 @@ function Detail() {
                               BUY NOW
                             </button>
                           </Link>
-                          <Link href="#">
+                          <Link href="https://distrosales.com/brand/americana-hemp/">
                             <button className="px-4 py-2 bg-black rounded-xl hover:bg-green-800 transition duration-500 ease-in-out mt-3 text-white text-[13px]">
                               BUY WHOLE SALE
                             </button>
